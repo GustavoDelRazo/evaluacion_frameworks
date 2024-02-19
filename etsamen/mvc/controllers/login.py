@@ -13,6 +13,4 @@ class Login:
 
         if username == "gush" and password == "123":
             web.setcookie('username', username)
-            raise web.seeother('/index')
-        else:
-            return render.login()
+            return render.index()
